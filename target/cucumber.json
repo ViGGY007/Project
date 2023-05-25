@@ -1,0 +1,127 @@
+[
+  {
+    "line": 3,
+    "elements": [
+      {
+        "line": 5,
+        "name": "User has already logged in with valid credentials",
+        "description": "and is navigated to hotelBooking page. ",
+        "type": "background",
+        "keyword": "Background",
+        "steps": []
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 2963933400,
+              "status": "passed"
+            },
+            "match": {
+              "location": "StepDefHotelBooking.openBrowsser()"
+            }
+          }
+        ],
+        "line": 46,
+        "name": "Failure in hotel Booking on incorrect mobileNo format",
+        "description": "",
+        "id": "hotelbooking;failure-in-hotel-booking-on-incorrect-mobileno-format",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 135767400,
+              "status": "passed"
+            },
+            "line": 47,
+            "name": "User is on hotel booking page",
+            "match": {
+              "location": "StepDefHotelBooking.user_is_on_hotel_booking_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 3373353500,
+              "status": "passed"
+            },
+            "line": 48,
+            "name": "user enters incorrect mobileNo format and clicks the button",
+            "match": {
+              "location": "StepDefHotelBooking.user_enters_incorrect_mobileNo_format_and_clicks_the_button(DataTable)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "7722005480"
+                ]
+              },
+              {
+                "cells": [
+                  "0900000000"
+                ]
+              },
+              {
+                "cells": [
+                  "2345678989"
+                ]
+              },
+              {
+                "cells": [
+                  "84321"
+                ]
+              },
+              {
+                "cells": [
+                  "77722005480"
+                ]
+              },
+              {
+                "cells": [
+                  ""
+                ]
+              }
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 1129392000,
+              "status": "passed"
+            },
+            "line": 55,
+            "name": "display alert msg",
+            "match": {
+              "location": "StepDefHotelBooking.display_alert_msg()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@HotelBooking"
+          },
+          {
+            "name": "@incorrect_mobileNo_format"
+          }
+        ]
+      }
+    ],
+    "name": "HotelBooking",
+    "description": "",
+    "id": "hotelbooking",
+    "keyword": "Feature",
+    "uri": "Feature/Hotelbooking.feature",
+    "tags": [
+      {
+        "name": "@HotelBooking",
+        "type": "Tag",
+        "location": {
+          "line": 2,
+          "column": 1
+        }
+      }
+    ]
+  }
+]
